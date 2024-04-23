@@ -9,7 +9,7 @@ week 1 (23-26):
 - change project idea to reflect time schedule (probably a computer game like 2048 or that snake game) + research
 
 24:
-- figure out how/if use replit or spider and write pseudo code
+- figure out how/if to use replit or spider and write pseudo code
 25: 
 - continue with pseudo code
 26: 
