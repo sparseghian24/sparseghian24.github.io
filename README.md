@@ -10,20 +10,27 @@ week 1 (23-26):
 
 24:
 - figure out how/if to use replit or spider and write pseudo code
+  
 25: 
 - continue with pseudo code
+  
 26: 
 - continue with pseudo code
+
+  
 week 2 (29-3):
 
 29:
-- start writing actual code 
+- start writing actual code
+  
 30: 
-- keep writing actual code 
+- keep writing actual code
+  
 1: NA (drop)
 
 2: 
-- keep writing actual code 
+- keep writing actual code
+  
 3:
 - keep writing actual code 
   
