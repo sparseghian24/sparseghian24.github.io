@@ -62,4 +62,4 @@ week 4: (13-17):
 
 17: (last day of school + drop) 
 
-days left as of 4/23: 10
+countdown: 9
