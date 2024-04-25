@@ -24,7 +24,7 @@ week 2 (29-3):
 - start writing actual code
   
 30: 
-- keep writing actual code
+- NA (seniors out)
   
 1: NA (drop)
 
@@ -62,4 +62,4 @@ week 4: (13-17):
 
 17: (last day of school + drop) 
 
-countdown: 9
+countdown: 6
