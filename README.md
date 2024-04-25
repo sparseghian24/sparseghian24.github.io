@@ -6,7 +6,7 @@ week 1 (23-26):
     
 23: 
 - make calendar of how many days left  
-- change project idea to reflect time schedule (probably a computer game like 2048 or that snake game) + research
+- change project idea to reflect time schedule (probably a computer game like hangman or that snake game) + research
 
 24:
 - figure out how/if to use replit or spider and write pseudo code
