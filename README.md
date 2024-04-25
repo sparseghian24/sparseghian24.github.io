@@ -12,8 +12,7 @@ week 1 (23-26):
 - figure out how/if to use replit or spider and write pseudo code
   
 25: 
-- continue with pseudo code
-  
+- changed my topic (hangman)- research/plan on how to make it  
 26: 
 - continue with pseudo code
 
