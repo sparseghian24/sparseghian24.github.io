@@ -47,7 +47,6 @@ week 3: (6-10):
 10: NA (ap week)
 
 week 4: (13-17):
---> senior day probably sometime this week so -1 day 
 
 13: NA (ap week)
 
