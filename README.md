@@ -61,4 +61,4 @@ week 4: (13-17):
 
 17: (last day of school + drop) 
 
-countdown: 5
+countdown: 4
