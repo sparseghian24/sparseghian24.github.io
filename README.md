@@ -31,9 +31,8 @@ week 2 (29-3):
 2: 
 - keep writing actual code
   
-3:
-- keep writing actual code 
-  
+3: NA (go to spanish debato with yoojin) 
+
 week 3: (6-10):
 
 6:
