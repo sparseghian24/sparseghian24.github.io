@@ -39,18 +39,18 @@ week 3: (6-10):
 6:
 - keep writing/finalize/fix any bugs in actual code
 
-7: NA (ap week)
+7: NA (ap)
 
-8: NA (ap week)
+8: NA (ap)
 
 9: NA (drop) 
 
-10: NA (ap week)
+10: NA (ap)
 
 
 week 4: (13-17):
 
-13: NA (ap week)
+13: NA (ap)
 
 14: 
 - add any necessary details/final touches/if time maybe put it onto a website
@@ -58,7 +58,7 @@ week 4: (13-17):
 15:
 - last minute finalize
   
-16: NA (ap week)
+16: NA (ap)
 
 17: (last day of school + drop) 
 
