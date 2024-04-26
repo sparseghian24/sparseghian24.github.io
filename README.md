@@ -14,9 +14,8 @@ week 1 (23-26):
 25: 
 - changed my topic (hangman)- research/plan on how to make it
 - started new pseudo code 
-26: 
-- continue with pseudo code
-
+26:
+- researched tutorials and found one I liked and started following along to it 
   
 week 2 (29-3):
 
@@ -24,7 +23,7 @@ week 2 (29-3):
 - start writing actual code
   
 30: 
-- NA (seniors out)
+- NA? (maybe senior skip day)
   
 1: NA (drop)
 
@@ -62,4 +61,4 @@ week 4: (13-17):
 
 17: (last day of school + drop) 
 
-countdown: 6
+countdown: 5
