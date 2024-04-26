@@ -13,7 +13,8 @@ week 1 (23-26):
   
 25: 
 - changed my topic (hangman)- research/plan on how to make it
-- started new pseudo code 
+- started new pseudo code
+  
 26:
 - researched tutorials and found one I liked and started following along to it 
   
