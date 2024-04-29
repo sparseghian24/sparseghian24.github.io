@@ -13,35 +13,4 @@
 # - if word is complete, break out of loop (yay u won word is complete)
 # 5) if out of tries and word is not complete, break out of loop and say u lost (tell user what the word actualy was)
 
-#secret word player is trying to guess 
-secretword = "apricot"
-lettersGuessed = "" 
 
-#number of turns before game is over
-failureCount = 6 
-
-#loop until player has made too many guesses/failed attempts
-while failureCount > 0:
-  guess = input("Enter a letter: ") 
-  if guess in secretword:
-    print(f"yay good job! There is one or more {guess} in the secret word.")
-  else:
-    failureCount -= 1 
-    print(f"Wrong. There are no {guess} in the secret word. {failureCount} turn(s) left.")
-
-  lettersGuessed = lettersGuessed + guess 
-  wrongletterCount = 0
-
-  for letter in secretword:
-    if letter in lettersGuessed:
-      print(f"{letter}", end="")
-    else: 
-      print("_", end= "")
-      wrongletterCount += 1 
-
-  if wrongletterCount == 0:
-    print(f" Congrats! The secret word was: {secretword}. You won!")
-    break 
-
-else: 
-  print(f"Game over, you lost. The word was {secretword}.")
