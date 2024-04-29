@@ -21,10 +21,10 @@ week 1 (23-26):
 week 2 (29-3):
 
 29:
-- start writing actual code
+- started writing actual code
   
 30: 
-- NA? (maybe senior skip day)
+- continue working on code
   
 1: NA (drop)
 
