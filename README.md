@@ -24,14 +24,14 @@ week 2 (29-3):
 - started writing actual code
   
 30: 
-- continue working on code
+- continued working on code
   
 1: NA (drop)
 
 2: 
 - keep writing actual code
   
-3: NA (go to spanish debato with yoojin) 
+3: NA (go to spanish spanish presentation) 
 
 week 3: (6-10):
 
