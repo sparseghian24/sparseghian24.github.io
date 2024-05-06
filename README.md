@@ -53,6 +53,7 @@ week 4: (13-17):
 
 14: 
 - add any necessary details/final touches/if time maybe put it onto a website
+  --> present? 
 
 15:
 - last minute finalize
@@ -61,4 +62,4 @@ week 4: (13-17):
 
 17: (last day of school + drop) 
 
-countdown: 4
+countdown:3
