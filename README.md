@@ -1,6 +1,6 @@
 # sparseghian24.github.io
 
-plan:
+plan/schedule: 
 
 week 1 (23-26):
     
