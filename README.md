@@ -44,8 +44,7 @@ week 3: (6-10):
 
 9: worked on presentation slideshow 
 
-10: NA (ap)
-
+10: NA (ap + drop) 
 
 week 4: (13-17):
 
@@ -60,6 +59,6 @@ week 4: (13-17):
   
 16: NA (ap)
 
-17: (last day of school + drop) 
+17: (last day of school)
 
-countdown:2
+countdown:3
