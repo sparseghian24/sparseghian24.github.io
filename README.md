@@ -42,7 +42,7 @@ week 3: (6-10):
 
 8: NA (ap)
 
-9: NA (drop) 
+9: worked on presentation slideshow 
 
 10: NA (ap)
 
