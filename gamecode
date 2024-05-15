@@ -16,7 +16,6 @@
 #list of random words
 import random 
 
-word_list = ["soleen", "jed", "ananya", "anoush", "conrad", "daniel", "dylan", "elizabeth", "giorgio", "harout", "jacob", "jonah", "jonathan", "kubra", "kyle", "lucas", "natalia", "oscar", "tenley", "wesley", "zachary"]
 
 
 #secret word player is trying to guess 
