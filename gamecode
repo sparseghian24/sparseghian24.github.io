@@ -14,110 +14,140 @@
 # 5) if out of tries and word is not complete, break out of loop and say u lost (tell user what the word actualy was)
 
 #list of random words
-import random 
+import random
+
+names = ["soleen", "jed", "ananya", "anoush", "conrad", "daniel", "dylan", "elizabeth", "giorgio", "harout", "jacob", "jonah", "jonathan", "kubra", "kyle", "lucas", "natalia", "oscar", "tenley", "wesley", "zachary"]
+countries = ["argentina", "armenia", "brazil", "canada", "lebanon", "syria", "kuwait", "egypt", "australia", "austria", "germany", "france", "netherlands", "switzerland", "italy", "uruguay", "georgia", "iraq", "jordan", "iran"]
+foods = ["pizza", "burger", "pasta", "sushi", "tacos", "chicken", "fries", "steak", "salad", "chips", "rice", "noodles", "soup", "cake", "ice cream", "candy", "cookies"]
+
+def choose_theme():
+    while True:
+        print("Choose a theme: names, countries, or foods")
+        theme = input().lower()
+
+        if theme in ["names", "countries", "foods"]:
+            if theme == "names":
+                return names
+            elif theme == "countries":
+                return countries
+            else:
+                return foods
+        else:
+            print("Error: please enter a valid theme (names, countries, or foods)")
+
+def helpful_hint(secretword, lettersGuessed):
+    for letter in secretword:
+        if letter not in lettersGuessed:
+            return letter
+    return ""
+
+def play_hangman():
+    word_list = choose_theme()
+    secretword = random.choice(word_list)
+    lettersGuessed = ""
+    wrongGuesses = ""
+    rightGuesses = ""
+
+    failureCount = 6
+    score = 0
+
+    hangman_stages = [
+         """
+        -----
+        |   |
+            |
+            |
+            |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+            |
+            |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+        |   |
+            |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+       /|   |
+            |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+       /|\\  |
+            |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+       /|\\  |
+       /    |
+            |
+        ---------
+        """,
+        """
+        -----
+        |   |
+        O   |
+       /|\\  |
+       / \\  |
+            |
+        ---------
+        """
+    ]
+
+    while failureCount > 0:
+        print(hangman_stages[6 - failureCount])
+        print(f"Wrong guesses: {wrongGuesses}")
+        print(f"Right guesses: {rightGuesses}")
+        guess = input("Enter a letter: ").lower()
+        if guess in lettersGuessed:
+            print("You've already guessed that letter. Try again.")
+            continue
+        lettersGuessed += guess
+        if guess in secretword:
+            rightGuesses += guess
+            if all(letter in lettersGuessed for letter in secretword):
+                print(f"Congratulations! The secret word was: {secretword}. You won!")
+                break
+        else:
+            wrongGuesses += guess
+            failureCount -= 1
+        if failureCount == 0:
+            print(hangman_stages[6])
+            print(f"Game over, you lost. The word was: {secretword}.")
+            break
+        print(f"Your score is {score}")
+        
+if __name__ == "__main__":
+    play_hangman()
 
 
 
-#secret word player is trying to guess 
-secretword = random.choice(word_list)
-lettersGuessed = "" 
 
-#number of turns before game is over
-failureCount = 6 
 
-#display board 
-hangman_stages = [
-    """
-    -----
-    |   |
-        |
-        |
-        |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-        |
-        |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-    |   |
-        |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-   /|   |
-        |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-   /|\\  |
-        |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-   /|\\  |
-   /    |
-        |
-    ---------
-    """,
-    """
-    -----
-    |   |
-    O   |
-   /|\\  |
-   / \\  |
-        |
-    ---------
-    """
-]
 
-#loop until player has made too many guesses/failed attempts
-while failureCount > 0:
-  print(hangman_stages[6 - failureCount])
-  guess = input(" Enter a letter: ") 
-  if guess in secretword:
-    print(f"yay good job! There is one or more {guess} in the secret word.")
-  else:
-    failureCount -= 1 
-    print(f"Wrong. There are no {guess} in the secret word. {failureCount} turn(s) left.")
 
-  lettersGuessed = lettersGuessed + guess 
-  wrongletterCount = 0
 
-  for letter in secretword:
-    if letter in lettersGuessed:
-      print(f"{letter}", end="")
-    else: 
-      print("_", end= "")
-      wrongletterCount += 1 
 
-  print()
-   
-  if wrongletterCount == 0:
-    print(f" Congrats! The secret word was: {secretword}. You won!")
-    break 
-
-else: 
-  print(hangman_stages[6 - failureCount])
-  print(f"Game over, you lost. The word was {secretword}.")
