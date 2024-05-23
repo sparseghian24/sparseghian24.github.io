@@ -35,18 +35,22 @@ def choose_theme():
         else:
             print("Error: please enter a valid theme (names, countries, or foods)")
 
-def helpful_hint(secretword, lettersGuessed):
+def display_word(secretword, lettersGuessed):
+    display = ''
     for letter in secretword:
-        if letter not in lettersGuessed:
-            return letter
-    return ""
+        if letter in lettersGuessed:
+            display += letter 
+        else: 
+            display += '_'
+    return display 
+
 
 def play_hangman():
     word_list = choose_theme()
     secretword = random.choice(word_list)
     lettersGuessed = ""
-    wrongGuesses = ""
-    rightGuesses = ""
+    wrongGuesses = []
+    rightGuesses = []
 
     failureCount = 6
     score = 0
@@ -119,8 +123,9 @@ def play_hangman():
 
     while failureCount > 0:
         print(hangman_stages[6 - failureCount])
-        print(f"Wrong guesses: {wrongGuesses}")
-        print(f"Right guesses: {rightGuesses}")
+        print(f"Wrong guesses: {', '.join(wrongGuesses)}")
+        print(f"Right guesses: {', '.join(rightGuesses)}")
+        print(display_word(secretword, lettersGuessed))
         guess = input("Enter a letter: ").lower()
         if guess in lettersGuessed:
             print("You've already guessed that letter. Try again.")
@@ -132,7 +137,7 @@ def play_hangman():
                 print(f"Congratulations! The secret word was: {secretword}. You won!")
                 break
         else:
-            wrongGuesses += guess
+            wrongGuesses.append(guess)
             failureCount -= 1
         if failureCount == 0:
             print(hangman_stages[6])
@@ -142,6 +147,15 @@ def play_hangman():
         
 if __name__ == "__main__":
     play_hangman()
+
+
+
+
+
+
+
+
+
 
 
 
